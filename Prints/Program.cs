@@ -8,6 +8,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
+using Microsoft.WindowsAPICodePack.Dialogs;
+
 namespace Prints
 {
     class Program
@@ -15,8 +17,7 @@ namespace Prints
         
         Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();
         Document document =null;
-        FolderBrowserDialog fbd = new FolderBrowserDialog();
-        var dlg = new Microsoft.WindowsAPICodePack.Dialogs.CommonOpenFileDialog();
+        //FolderBrowserDialog fbd = new FolderBrowserDialog();
         object missing = System.Reflection.Missing.Value;
         public void DisposeExcelInstance()
         {
@@ -24,13 +25,18 @@ namespace Prints
         }
         void Process()
         {
-          
+            var directoryDialog = new CommonOpenFileDialog
+            {
+                IsFolderPicker = true,
+                Title = "Select Folder"
+            };
             try
             {
                 
-                if (fbd.ShowDialog() == DialogResult.OK)
+                //if (fbd.ShowDialog() == DialogResult.OK)
+                if(directoryDialog.ShowDialog()==CommonFileDialogResult.Ok)
                 {
-                    foreach (string path in Directory.GetFiles(fbd.SelectedPath))
+                    foreach (string path in Directory.GetFiles(directoryDialog.FileName))
                     {
                        
                         object file = (object)path;

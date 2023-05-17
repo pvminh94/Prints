@@ -1,6 +1,12 @@
 E:\New folder\Prints\Prints\bin\Debug\Prints.exe.config
 E:\New folder\Prints\Prints\bin\Debug\Prints.exe
 E:\New folder\Prints\Prints\bin\Debug\Prints.pdb
+E:\New folder\Prints\Prints\bin\Debug\Microsoft.WindowsAPICodePack.dll
+E:\New folder\Prints\Prints\bin\Debug\Microsoft.WindowsAPICodePack.ExtendedLinguisticServices.dll
+E:\New folder\Prints\Prints\bin\Debug\Microsoft.WindowsAPICodePack.Sensors.dll
+E:\New folder\Prints\Prints\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+E:\New folder\Prints\Prints\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
 E:\New folder\Prints\Prints\obj\Debug\Prints.csproj.CoreCompileInputs.cache
+E:\New folder\Prints\Prints\obj\Debug\Prints.csproj.CopyComplete
 E:\New folder\Prints\Prints\obj\Debug\Prints.exe
 E:\New folder\Prints\Prints\obj\Debug\Prints.pdb
